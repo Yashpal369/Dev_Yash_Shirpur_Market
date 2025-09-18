@@ -96,6 +96,7 @@ const CustomerCart = () => {
       description: `Your order for ₹${getTotalAmount().toFixed(2)} has been placed successfully.`,
     });
     
+    
     const clearedCart = clearCart();
     setCart(clearedCart);
     window.dispatchEvent(new CustomEvent('cartUpdated'));
